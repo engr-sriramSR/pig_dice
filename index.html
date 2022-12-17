@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PigDice</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/0816e9224c.js" crossorigin="anonymous"></script>
+    <script defer src="./script/script.js"></script>
+</head>
+<body>
+    <div class="board">
+        <div class="player-1 active" id="player-1">
+            <h1 class="title" id="title-1">Player 1</h1>
+            <div class="score" id="score-1">23</div>
+            <div class="current">
+                <h2 class="sub-title">Current Score</h2>
+                <div class="sub-score" id="sub-score-1">2</div>
+            </div>
+        </div>
+        <div class="player-2" id="player-2">
+            <h1 class="title" id="title-2">Player 2</h1>
+            <div class="score" id="score-2">15</div>
+            <div class="current">
+                <h2 class="sub-title">Current Score</h2>
+                <div class="sub-score" id="sub-score-2">2</div>
+            </div>
+        </div>
+    </div>
+    <div class="components">
+        <label for="final-score" class="final-label">Final Score</label>
+        <input type="number" class='final-score' placeholder=0 id='final-score'>
+        <button class="roll" id="roll" onclick="rollDice()"><i class="fa-solid fa-rotate"></i>Roll Dice</button>
+        <button class="hold" id="hold" onclick="holdValue()"><i class="fa-solid fa-hand-point-down"></i>Hold</button>
+        <button class="new-game"id="new-game" onclick="initial()"><i class="fa-solid fa-plus"></i>NewGame</button>
+        <img src="./images/dice-1.png" alt="Dice" class="dice" id="dice">
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, red, white);
+}
+.board{
+    display: flex;
+    width: 60%;
+    height: 60%;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    column-gap: 0.5rem;
+}
+.player-1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+.player-2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px;
+    color: brown;
+}
+.score{
+    width:100%;
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: rgb(189, 7, 7);
+}
+.current{
+    width: 50%;
+    height: 15%;
+    padding: 10px;
+    position: relative;
+    left:25%;
+    background-color: rgb(252, 9, 9);
+}
+.sub-title{
+    width: 100%;
+    height: 30%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 100;
+}
+.sub-score{
+    width: 100%;
+    height: 70%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.25rem;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s;
+}
+button:hover{ 
+    font-weight: 600; 
+}
+button:hover i{ 
+    margin-right: 5px; 
+}
+button:focus{
+    outline: none;
+}
+.roll{
+    position: absolute;
+    left:50%;
+    top: 60%;
+}
+.hold{
+    position: absolute;
+    left: 50%;
+    top:65%;
+}
+.new-game{
+    position: absolute;
+    left:50%;
+    top:22%;
+}
+.final-score{
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    left: 45%;
+    top:73%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+.final-label{
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+}
+.dice{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:48%;
+    top:38%;
+    display: none;
+}
+.components i{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.active{
+    background-color: rgb(123, 119, 112);
+}
+.active .title{
+    font-weight: 900;
+}
+.winner{
+    background-color: red;
+    color: black;
+    font-weight: 900;
+}
+.winner .title{
+    color: black;
+}
+.winner .score{
+    color: black;
+}
