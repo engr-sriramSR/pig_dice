@@ -1,8 +1,8 @@
-#Pig Dice Game
+# Pig Dice Game
 
 <p>This is the controller exchange simple two players game where players have to exchange the controller and play the game.</p>
 
-#Rules:
+# Rules:
 
 <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":<p>
 <p>If the player rolls a 1, they score nothing and it becomes the next player's turn.</p>
